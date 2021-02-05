@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>calcolatrice</display-name>
+  
+  <servlet>
+    <servlet-name>piu</servlet-name>
+    <servlet-class>it.objectmethod.calcolatrice.servlets.Somma</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>piu</servlet-name>
+    <url-pattern>/Somma</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>meno</servlet-name>
+    <servlet-class>it.objectmethod.calcolatrice.servlets.Sottrazione</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>meno</servlet-name>
+    <url-pattern>/Sottrazione</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>per</servlet-name>
+    <servlet-class>it.objectmethod.calcolatrice.servlets.Moltiplicazione</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>per</servlet-name>
+    <url-pattern>/Moltiplicazione</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>diviso</servlet-name>
+    <servlet-class>it.objectmethod.calcolatrice.servlets.Divisione</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>diviso</servlet-name>
+    <url-pattern>/Divisione</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
